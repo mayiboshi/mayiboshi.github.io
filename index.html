@@ -1,1 +1,24 @@
-<h1>Hi</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Password Protected Page</title>
+<script>
+function validatePassword() {
+    var password = document.getElementById("password").value;
+    if (password === "1234") {
+        // 更新此处以包含你的100字文本和超链接
+        document.getElementById("message").innerHTML = "这里是你的100字文本。要了解更多信息，请<br><a href='https://watch.wave.video/wQF8dQdJYFK8YSAZ'>22.12.13会议(1)</a><br><a href='https://watch.wave.video/OJ3gJKcoORxQaq5r'>22.12.13会议(2)</a><br><a href='https://watch.wave.video/Y6biRh1fyQCmStB9'>22.12.13会议(3)</a><br><br><a href='https://watch.wave.video/h4EEHsqgGRs7mDkj'>22.12.14会议(1)</a><br><a href='https://watch.wave.video/5wf5PLqopfxX8b6W'>22.12.14会议(2)</a><br><a href='https://watch.wave.video/oKte9JI3NXeC42K9'>22.12.14会议(3)</a><br><a href='https://watch.wave.video/xS2TT7Yc2HXQ3xMd'>22.12.14会议(4)</a><br><br><a href='https://watch.wave.video/hg6tjT5NIVQoiaF5'>23.04.27会议(1)</a><br><a href='https://watch.wave.video/5aSDBoobcgvnkZSH'>23.04.27会议(2)</a><br><br><a href='https://watch.wave.video/V4nF59FK7celgUAR'>23.05.30会议(1)</a><br><a href='https://watch.wave.video/ntshJfPdKEKzArxY'>23.05.30会议(2)</a><br><a href='https://watch.wave.video/QGRzXNnXxkNLtTjc'>23.05.30会议(3)</a><br><a href='https://watch.wave.video/vt4aPUflPXzvKQtl'>23.05.30会议(4)</a><br><a href='https://watch.wave.video/XiVJlaGkH95o6PaY'>23.05.30会议(5)</a><br><a href='https://watch.wave.video/8HripgbQ9gVIqBGK'>23.05.30会议(6)</a>";
+
+    } else {
+        alert("Incorrect Password!");
+    }
+}
+</script>
+</head>
+<body>
+    <h2>请输入密码：</h2>
+    <input type="password" id="password">
+    <button onclick="validatePassword()">Submit</button>
+    <p id="message"></p>
+</body>
+</html>
